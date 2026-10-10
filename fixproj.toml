@@ -32,12 +32,12 @@ git = { url = "https://github.com/pt9999/fixlang-minilib-common.git" }
 
 [[dependencies]]
 name = "minilib-text"
-version = "0.10.0"
+version = "0.10.2"
 # path = "../fixlang-minilib-text"
 git = { url = "https://github.com/pt9999/fixlang-minilib-text.git" }
 
 [[dependencies]]
 name = "minilib-collection"
-version = "0.9.0"
+version = "0.9.2"
 # path = "../fixlang-minilib-collection"
 git = { url = "https://github.com/pt9999/fixlang-minilib-collection.git" }
