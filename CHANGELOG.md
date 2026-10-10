@@ -1,6 +1,5 @@
 ## 0.7.2
 ### Changed
-- Renamed the values whose names start with `_` and a capital letter to start with `__` (`_DOUBLEQUOTE` -> `__DOUBLEQUOTE`). Fix is to read such a name as the name of a type, a trait, a namespace or a module (tttmmmyyyy/fixlang#812).
 - Upgraded to minilib-text@0.10.2, minilib-collection@0.9.2.
 
 ## 0.7.1
