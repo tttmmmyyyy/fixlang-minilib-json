@@ -221,11 +221,11 @@ _parse_number = (
 // 7. Strings
 //=============================================================
 
-_DOUBLEQUOTE: U8;
-_DOUBLEQUOTE = 34_U8; // '\"'
+__DOUBLEQUOTE: U8;
+__DOUBLEQUOTE = 34_U8; // '\"'
 
 _match_unquoted_char: Parser U8;
-_match_unquoted_char = match_any_char.filter(|c| c != _DOUBLEQUOTE && c != '\\');
+_match_unquoted_char = match_any_char.filter(|c| c != __DOUBLEQUOTE && c != '\\');
 
 _match_unquoted_str: Parser String;
 _match_unquoted_str = (
@@ -306,9 +306,9 @@ _match_str_inner = do {
 
 _parse_string: Parser String;
 _parse_string = do {
-    match_char(_DOUBLEQUOTE);;
+    match_char(__DOUBLEQUOTE);;
     let str = *_match_str_inner;
-    match_char(_DOUBLEQUOTE).or_error(
+    match_char(__DOUBLEQUOTE).or_error(
         "The double quote at the end of the string is missing."
     );;
     pure $ str
